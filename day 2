@@ -51,7 +51,7 @@ int main(){
 
 
 
-// problem 7
+// problem 6
 
 #include <iostream>
 using namespace std;
@@ -84,3 +84,32 @@ int main(){
 
 
 
+
+
+
+
+
+//problem 7
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string dayOrNight;
+    bool motionDetected;
+    
+    cout << "is it Day Or Night?... ";
+    cin >> dayOrNight;
+    cout << "is motion detected?..";
+    cin >> motionDetected;
+    
+    if(dayOrNight == "Night" || dayOrNight == "night"){
+        if(motionDetected){
+            cout << "Turn on LED with 100% brightness";
+        } else {
+            cout << "Turn on LED with 10% brightness";
+        } 
+        }else {
+            cout << "Turn OFF the Light..";
+        }
+}
