@@ -42,3 +42,45 @@ int main(){
     }
   }
 }
+
+
+
+
+
+
+
+
+
+// problem 5
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int choice;
+    cin>> choice;
+    
+    switch(choice){
+        case 1 :
+        cout<<"Transferrig call to the support team...";
+        break;
+        case 2 :
+        cout<<"Transferring call to the billing an account department...";
+        break;
+        case 3 :
+        cout<<"connecting call to the technical team...";
+        case 4 :
+        cout<<"pleae wait while we are connecting your call to an agent...";
+        break;
+        default:
+        cout<<"enter a valid choice...";
+    
+    }
+}
+
+
+
+
+
+
+
