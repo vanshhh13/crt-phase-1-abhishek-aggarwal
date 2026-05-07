@@ -1,0 +1,148 @@
+// program 1
+#include <iostream>
+using namespace std;
+
+void updatebyValue(int a){
+    a = 500;
+}
+void updatebyReference(int & a){
+    a = 500;
+}
+
+int main (){
+    int original = 100;
+    updatebyValue(original);
+    cout << original <<"\n";
+    updatebyReference(original);
+    cout << original;
+}\
+
+
+
+
+
+// program 2 
+// access specifire
+// private
+
+#include <iostream>
+using namespace std;
+
+class BankAccount{
+  private:
+  int balance = 5000;
+  
+  public:
+  void showbalance(){
+    cout << balance;
+  }
+};
+int main(){
+  BankAccount obj1;
+ 
+  obj1.showbalance();
+}
+
+
+
+
+
+// problem 3 
+// protecetd access specifier 
+#include<iostream>
+using namespace std;
+
+class Parent {
+protected:
+    int secretCode = 1234;
+};
+
+class child : public Parent {
+public:
+    void accessLocker() {
+        cout << secretCode;
+    }
+};
+
+int main() {
+    child obj1;
+    obj1.accessLocker();
+}
+
+
+
+
+
+
+// problem 5 
+// constructor overloading
+#include <iostream>
+using namespace std;
+
+class rectangle {
+ public:  
+  int length;
+  int width;
+
+  rectangle(){
+      length = 10;
+      width = 20;
+  }
+
+rectangle(int l){
+    length = l;
+    width = 20;
+}
+  
+  rectangle(int l, int w){
+   length = l;
+   width = w;
+}
+
+ void area() {
+     cout << length * width;
+ }
+ 
+};
+
+ int main (){
+    rectangle r1;
+    r1.area();
+    rectangle r2(5);
+    r2.area();
+    rectangle r3(50,100);
+    r3.area();
+}
+
+
+
+
+
+
+
+// problem no 4  
+// constructor
+// 4.1 parameterized constructor
+
+#include <iostream>
+using namespace std;
+
+class Student{
+  
+  
+  public:
+  String name:
+  int age;
+  
+  Student(string studentName, int studentAge){
+    
+  }
+  void introduce(){
+    cout <<" Hi , this person name is " << "and his age is" << age << "\n";
+    
+  }
+};
+
+int main (){
+  Student s1("Abhishek",24)
+  s1.introduce();
